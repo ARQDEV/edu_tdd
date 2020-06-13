@@ -4,7 +4,7 @@ public class Producto {
 
 	private String codigo;
 	private double precio;
-	private static double IVA19 = 19;  
+	public static double IVA19 = 19;  
 
 	public String getCodigo() {
 		return codigo;

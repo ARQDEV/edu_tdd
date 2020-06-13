@@ -13,9 +13,7 @@ class CalcularIvaProducto {
 		tenis.setCodigo("T123");
 		tenis.setPrecio(150000D);
 		
-		
-		
-		//assertEquals(150000, tenis.getPrecio()+ tenis.IVA19);
+		assertEquals(150000+tenis.IVA19, tenis.getPrecio()+ tenis.IVA19);
 	}
 
 }
