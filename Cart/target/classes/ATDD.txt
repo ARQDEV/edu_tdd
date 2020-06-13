@@ -1,0 +1,22 @@
+Definición:
+
+
+Tener un carrito de compra que permita:
+
+--- USUARIO FINAL
+
+--Productos
+	1. Agregar productos								OK
+	2. Eliminar productos								OK
+	3. Mostrar los productos con precios	
+	4. Modificar cantidades de los productos
+	
+	
+-- Facturacion
+	Calcular valor total de producto
+	Calcular valor total con IVA 19%
+	Calcular envio
+
+------- ADMIN
+	Modificar productos (ADMIN)
+
