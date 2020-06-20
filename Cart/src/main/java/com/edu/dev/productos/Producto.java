@@ -1,10 +1,8 @@
-package com.edu.dev.produtos;
+package com.edu.dev.productos;
 
 public class Producto {
-
 	private String codigo;
 	private double precio;
-	public static double IVA19 = 19;  
 
 	public String getCodigo() {
 		return codigo;
@@ -21,5 +19,4 @@ public class Producto {
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-
 }
