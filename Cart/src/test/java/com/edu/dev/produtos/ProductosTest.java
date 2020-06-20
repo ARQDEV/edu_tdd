@@ -4,6 +4,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import com.edu.dev.producto.Carro;
+import com.edu.dev.producto.Producto;
+
 class ProductosTest {
 
 	@Test

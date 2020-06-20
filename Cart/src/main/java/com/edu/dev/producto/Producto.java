@@ -1,10 +1,10 @@
-package com.edu.dev.produtos;
+package com.edu.dev.producto;
 
 public class Producto {
 
 	private String codigo;
 	private double precio;
-	public static double IVA19 = 19;  
+	public static Double IVA19 = new Double(19);  
 
 	public String getCodigo() {
 		return codigo;
