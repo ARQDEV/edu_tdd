@@ -1,4 +1,4 @@
-package com.edu.dev.produtos;
+package com.edu.dev.productos;
 
 import java.util.HashMap;
 import java.util.Map;
