@@ -4,7 +4,7 @@ import com.edu.dev.productos.Producto;
 
 public class CalculadorIva19 implements CalculadorIva {
 
-    public static final double IVA_19 = 1.19;
+    private static final double IVA_19 = 1.19;
 
     @Override
     public double getIvaProducto(Producto producto) {

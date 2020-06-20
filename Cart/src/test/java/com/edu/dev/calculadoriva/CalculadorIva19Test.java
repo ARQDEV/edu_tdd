@@ -15,5 +15,4 @@ class CalculadorIva19Test {
         tennisAdidas.setPrecio(150000);
         assertEquals(178500, calculadorIva19.getIvaProducto(tennisAdidas));
     }
-
 }
