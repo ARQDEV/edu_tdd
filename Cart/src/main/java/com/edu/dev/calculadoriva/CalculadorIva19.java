@@ -3,17 +3,16 @@ package com.edu.dev.calculadoriva;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.logging.Logger;
 import java.util.Properties;
 
 import com.edu.dev.productos.Producto;
 
 public class CalculadorIva19 implements CalculadorIva {
-
-	//private static final double IVA_19 = 1.19;
-
 	
-
-	@Override
+	private static Logger LOGGER = Logger.getLogger("IvaLogging");
+	  
+ @Override
 	public double getIvaProducto(Producto producto) throws IOException {
 		
 		Properties properties = readPropertiesFile("config.properties");
@@ -26,17 +25,13 @@ public class CalculadorIva19 implements CalculadorIva {
 		Properties prop = null;
 		try {
 			fis = new FileInputStream(fileName);
-			// create Properties class object
 			prop = new Properties();
-			// load properties file into it
 			prop.load(fis);
 
 		} catch (FileNotFoundException e) {
-
-			e.printStackTrace();
+			LOGGER.info(e.getMessage());
 		} catch (IOException e) {
-
-			e.printStackTrace();
+			LOGGER.info(e.getMessage());
 		} finally {
 			fis.close();
 		}
