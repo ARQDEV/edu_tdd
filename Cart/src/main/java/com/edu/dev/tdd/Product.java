@@ -4,17 +4,17 @@ public class Product {
 
 	private Double id;
 	private String name;
-	private Double price;
+	private double price;
 	private boolean chargeIva;
 
-	public Product(Double id, String name, Double price, boolean chargeIva) {
+	public Product(double id, String name, Double price, boolean chargeIva) {
 		this.id = id;
 		this.name = name;
 		this.price = price;
 		this.chargeIva = chargeIva;
 	}
 
-	public Double getPrice() {
+	public double getPrice() {
 		return price;
 	}
 

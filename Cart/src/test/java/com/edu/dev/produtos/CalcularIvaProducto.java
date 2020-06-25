@@ -1,6 +1,8 @@
 package com.edu.dev.produtos;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.math.BigDecimal;
 
 import org.junit.jupiter.api.Test;
 
@@ -13,9 +15,9 @@ class CalcularIvaProducto {
 
 		Producto tenis = new Producto();
 		tenis.setCodigo("T123");
-		tenis.setPrecio(150000D);
+		tenis.setPrecio(new BigDecimal(150000));
 		
-		assertEquals(150000+tenis.IVA19, tenis.getPrecio()+ tenis.IVA19);
+		assertEquals(150000+Producto.IVA19, tenis.getPrecio().add(BigDecimal.valueOf(Producto.IVA19)));
 	}
 
 }

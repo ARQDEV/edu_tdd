@@ -5,7 +5,7 @@ import java.util.List;
 
 public class CalculateIva {
 
-	private static final Double IVA = 1.19;
+	private static final double IVA = 1.19;
 	private List<Product> productsList = new ArrayList<>();
 
 	public CalculateIva(List<Product> productsList) {
@@ -18,8 +18,7 @@ public class CalculateIva {
 
 		for (Product product : productsList) {
 			if (product.isChargeIva()) {
-				Double priceIva = (double) Math.round(product.getPrice() * IVA);
-				product.setPrice(priceIva);
+				product.setPrice((double) Math.round(product.getPrice() * IVA));
 			}
 			finalPrice += product.getPrice();
 		}
